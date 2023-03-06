@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-5kom
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images-protected:dh8mq-devfile-sample-5kom
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:fe8b6152855a42ad2494b9e3a821b2a42f265a1b58511e51f11f761ca4a4cd00
         name: my-nodejs
         ports:
         - containerPort: 3001
