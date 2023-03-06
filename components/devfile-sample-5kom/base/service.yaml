@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-5kom
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-5kom
+    app.kubernetes.io/part-of: e2e-nodejs
+  name: devfile-sample-5kom
+  namespace: e2e-demos-vksg-tenant
+spec:
+  ports:
+  - port: 3001
+    targetPort: 3001
+  selector:
+    app.kubernetes.io/instance: devfile-sample-5kom
+status:
+  loadBalancer: {}
