@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-5kom
+  namespace: e2e-demos-vksg-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:fe8b6152855a42ad2494b9e3a821b2a42f265a1b58511e51f11f761ca4a4cd00
+        name: my-nodejs
+        resources: {}
+status: {}
